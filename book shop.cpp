@@ -20,7 +20,7 @@ int main()
  
  
     for(int j = 0; j < n; j++)
-        for(int i = x; i >= 1; i--)  
+        for(int i = x; i >= 1; i--)
             if(i >= cost[j])
                 dp[i] = max(dp[i], pages[j] + dp[i - cost[j]]);
  
