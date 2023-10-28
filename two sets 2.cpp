@@ -47,7 +47,6 @@ signed main()
     for(int i = 1; i <= n; i++) 
         for(int j = sum; j >= i; j--) 
             (dp[j] += dp[j - i]) %= M;
-        
  
     cout << dvd(dp[sum/2], 2);
 }
