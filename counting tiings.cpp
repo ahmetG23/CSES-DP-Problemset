@@ -48,6 +48,7 @@ signed main() {
 
     for(int i = 0; i < m-1; i++) {
         for(int s = 0; s < 1<<n; s++) {
+            // k is the complementary of s
             int k = ~s & ((1<<n) - 1);
 
             cand.clear();
